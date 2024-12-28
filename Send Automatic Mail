@@ -5,10 +5,10 @@ from email.message import EmailMessage
 msg = EmailMessage()
 
 # Set email properties
-my_email = "arunrsk18@gmail.com"  # Replace with your email address
-recipient_email = "girishkrish1998yuv@gmail.com"  # Replace with the recipient's email address
+my_email = "#your email id"  # Replace with your email address
+recipient_email = "recipient's email address"  # Replace with the recipient's email address
 msg['Subject'] = 'Test Email from noreply'
-msg['From'] = "arunrsk18@gmail.com"  # 'NoReply' will appear as the sender name
+msg['From'] = "#your email id"  # 'NoReply' will appear as the sender name
 msg['To'] = recipient_email
 
 # Set the body of the email
@@ -17,7 +17,7 @@ msg.set_content("This email is sent using Python with 'noreply' as the sender na
 # Send the message via Gmail's SMTP server
 try:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login("arunrsk18@gmail.com", "wljo mcae sesc armm")  # Use your app password here
+        server.login("#your email id", "#your app password")  # Use your app password here
         server.send_message(msg)
     print("Email sent successfully!")
 except Exception as e:
